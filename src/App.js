@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import ReactState from './components/ReactState';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             Beta React Docs
           </a>
         </div>
+        <ReactState />
       </div>
     </div>
   );
