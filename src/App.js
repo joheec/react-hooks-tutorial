@@ -4,6 +4,7 @@ import ReactState from './components/ReactState';
 import NonReactState from './components/NonReactState';
 import UseRef from './components/UseRef';
 import UseMemo from './components/UseMemo';
+import UseCallback from './components/UseCallback';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <NonReactState />
         <UseRef />
         <UseMemo />
+        <UseCallback />
       </div>
     </div>
   );

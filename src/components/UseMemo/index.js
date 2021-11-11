@@ -38,7 +38,7 @@ const UseMemo = () => {
 			9 &nbsp;| <br />
 			10 | {"const filteredForecast = forecast.filter((day) => {"}<br />
 			11 | <Tab />{'console.count("UseMemo Section> Filtering Count");'}<br />
-			12 | <Tab />// Complex weather logic;<br />
+			12 | <Tab />{"// Complex weather logic;"}<br />
 			13 | <Tab />return result;<br />
 			14 | {"});"}<br />
 			15 |<br />
@@ -82,7 +82,7 @@ const UseMemo = () => {
 			9 &nbsp;| <br />
 			10 | {"const filteredForecast = useMemo(() => forecast.filter((day) => {"}<br />
 			11 | <Tab />{'console.count("UseMemo Section> UseMemo Filtering Count");'}<br />
-			12 | <Tab />// Complex weather logic;<br />
+			12 | <Tab />{"// Complex weather logic;"}<br />
 			13 | <Tab />return result;<br />
 			14 | {"}), [filter, forecast]);"}<br />
 			15 |<br />
