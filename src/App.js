@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import ReactState from './components/ReactState';
 import NonReactState from './components/NonReactState';
+import UseRef from './components/UseRef';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         </em>
         <ReactState />
         <NonReactState />
+        <UseRef />
       </div>
     </div>
   );
