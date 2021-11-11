@@ -67,9 +67,9 @@ const UseMemo = () => {
 			}
 			<button onClick={() => setValue(1 + value)}>Re-Render</button>
 		</div>
+        <p>The filteredForecast only needs to be re-calculated when filter or forecast changes. Utilize useMemo to cut back on expensive computations.</p>
 		<p>Definition of memoization - "to store the result of a computed expression so that it can be subsequently retrieved without repeating the computation"</p>
 		<p>Parameter 1 is the function that executes the computation. Parameter 2 is an array of dependencies. If the dependency values change, the function re-executes.</p>
-		<p>useMemo and useEffect are similar. The main difference is that useEffects is for functions with side-effects, and useMemo is for pure functions with no side-effects.</p>
 		<code>
 			1 &nbsp;| const [filter, setFilter] = useState("all");<br />
 			2 &nbsp;| const [forecast, setForecast] = useState([]);<br />
@@ -111,6 +111,7 @@ const UseMemo = () => {
 			}
 			<button onClick={() => setValue(1 + value)}>Re-Render</button>
 		</div>
+		<em>***NOTE: useMemo and useEffect are similar. The main difference is that useEffects is for functions with side-effects, and useMemo is for pure functions with no side-effects.</em>
 	</div>;
 }
 

@@ -58,7 +58,7 @@ const UseCallback = () => {
 			<PureComponent />
 			<button onClick={() => setValue(value + 1)}>Re-Render</button>
 		</div>
-		<p>The issue is when a function gets assigned to a prop, each re-rendering will create another instance of that function. From the perspective of the Pure Component, it is receiving a new prop everytime its parent component re-renders, and therefore also needs to re-render.</p>
+		<p>The issue is when a function gets assigned to a prop, each re-rendering of the parent component will create another instance of that function. From the perspective of the Pure Component, it is receiving a new prop, and therefore also needs to re-render.</p>
 		<code>
 			1 | {"const PureComponent = React.memo(({ someFunction }) => {"}<br />
 			2 | <Tab />console.count("Pure Component with Prop Re-Render Count");<br />
@@ -79,7 +79,7 @@ const UseCallback = () => {
 		<div className="sample">
 			<PureComponentWithPropWrap />
 		</div>
-		<p>By wrapping the Pure Component with useCallback, its prop will be assigned the same instance of the function after every re-render</p>
+		<p>By wrapping the passed in function with useCallback, the Pure Component's prop will be assigned the same instance of the function after every re-render of the parent</p>
 		<code>
 			1 | {"const PureComponent = React.memo(({ someFunction }) => {"}<br />
 			2 | <Tab />console.count("Pure Component with Prop and useCallback Re-Render Count");<br />

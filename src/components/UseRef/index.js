@@ -70,7 +70,7 @@ const UseRef = () => {
 	return <div>
 		<h2>UseRef</h2>
 		<h3>Sample 1</h3>
-		<p>Updating value is causing an unnecessary re-render</p>
+		<p>Updating value via the input is causing an unnecessary re-render</p>
 		<code>
 			1&nbsp; | const [value, setValue] = useState(0);<br />
 			2&nbsp; | const [operator, setOperator] = useState("?");<br/>
@@ -138,7 +138,7 @@ const UseRef = () => {
 			<div style={{ height: '50px', width: '50px', backgroundColor: isPink ? 'pink' : 'white' }}></div>
 			<button onClick={() => setIsPink(!isPink)}>Switch Color</button>
 		</div>
-		<p>Using useRef instead of useState prevents re-rendering due to update. By assigning the returned object from useRef to the element's ref attribute, changes will be registered as simple style changes.</p>
+		<p>Using useRef instead of useState prevents re-rendering due to update. By assigning the returned object from useRef to the element's ref attribute, changes to backgroundColor will be registered as simple style changes.</p>
 		<code>
 			1 &nbsp;| const boxEl = useRef();<br />
 			2 &nbsp;|<br />

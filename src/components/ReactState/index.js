@@ -45,7 +45,7 @@ const ReactState = () => {
 		<div className="sample">
 			<button onClick={() => setValue(Math.floor(Math.random()*100))}>change</button> value: {value} | random: {randomNumber}
 		</div>
-		<p> This is great if we want to re-calcuate something when a React state changes. For example, isEven needs to be re-calculated whenever value changes.</p>
+		<p> This is great if we want to re-calcuate something when a React state changes. For example, isEven needs to be re-calculated whenever value changes, which will always re-render the component on update anyways.</p>
 		<code>
 			1 | const [value, setValue] = useState(0);<br />
 			2 | const isEven = value % 2 === 0 ? true : false;<br/>

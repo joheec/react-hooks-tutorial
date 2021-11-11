@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Instructions from './components/Instructions';
 import ReactState from './components/ReactState';
 import NonReactState from './components/NonReactState';
 import UseRef from './components/UseRef';
@@ -35,11 +36,7 @@ function App() {
             Beta React Docs
           </a>
         </div>
-        <br /><br />
-        <em>
-          *NOTE: The displayed code is not an accurate representation of this app's code, and may have been modified for readability<br/><br />
-          **NOTE: Double logging only happens in development mode and should help to find accidental side effects in the render phase.
-        </em>
+        <Instructions />
         <ReactState />
         <NonReactState />
         <UseRef />
