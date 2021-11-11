@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import Tab from '../Tab';
+
 const ReactState = () => {
 	const [value, setValue] = useState(0);
 	const randomNumber = Math.floor(Math.random()*100);
@@ -23,8 +25,8 @@ const ReactState = () => {
 			1 | const [value, setValue] = useState(0);<br />
 			2 | <br/>
 			3 | return {"<div>"}<br/>
-			4 | &nbsp;&nbsp;&nbsp;&nbsp;{"<button onClick={() => setValue(Math.random())}>change</button>"}<br />
-			5 | &nbsp;&nbsp;&nbsp;&nbsp;{"value: {value}"}<br/>
+			4 | <Tab />{"<button onClick={() => setValue(Math.random())}>change</button>"}<br />
+			5 | <Tab />{"value: {value}"}<br/>
 			6 | {"</div>;"}
 		</code>
 		<div className="sample">
@@ -36,8 +38,8 @@ const ReactState = () => {
 			2 | const randomNumber = Math.random();<br />
 			3 | <br/>
 			4 | return {"<div>"}<br/>
-			5 | &nbsp;&nbsp;&nbsp;&nbsp;{"<button onClick={() => setValue(Math.random())}>change</button>"}<br />
-			6 | &nbsp;&nbsp;&nbsp;&nbsp;{"value: {value} | random: {randomNumber}"}<br/>
+			5 | <Tab />{"<button onClick={() => setValue(Math.random())}>change</button>"}<br />
+			6 | <Tab />{"value: {value} | random: {randomNumber}"}<br/>
 			7 | {"</div>;"}
 		</code>
 		<div className="sample">
@@ -49,8 +51,8 @@ const ReactState = () => {
 			2 | const isEven = value % 2 === 0 ? true : false;<br/>
 			3 | <br/>
 			4 | return {"<div>"}<br/>
-			5 | &nbsp;&nbsp;&nbsp;&nbsp;{"<button onClick={() => setValue(Math.random())}>change</button>"}<br />
-			6 | &nbsp;&nbsp;&nbsp;&nbsp;{"value: {value} | is even: {isEven}"}<br/>
+			5 | <Tab />{"<button onClick={() => setValue(Math.random())}>change</button>"}<br />
+			6 | <Tab />{"value: {value} | is even: {isEven.toString()}"}<br/>
 			7 | {"</div>;"}
 		</code>
 		<div className="sample">
